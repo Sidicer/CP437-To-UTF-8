@@ -1,9 +1,12 @@
 # Pabandome atsidaryti įrašymo failą kaip binarinį (ne tekstinį)
+# output file: Recoded386intel.txt
+# input file: 386intel.txt
 
 with open('Recoded386intel.txt','wb') as f: # "f" - atidaryto failo kintamasis, "wb" - Write Binary Mode
     f.write(bytes(range(256)))              # Užpildome baitais nuo 0 iki 255
 
-# Atidarius 'Recoded386intel.txt' failą matome# visus galimus simbolius nuo 0 iki 255
+# Atidarius 'Recoded386intel.txt' failą matome
+# visus galimus simbolius nuo 0 iki 255
 #
 # Tai reiškia, kad sėkmingai įrašėme binariniu būdu,
 # todėl galime eiti prie perkodavimo:
